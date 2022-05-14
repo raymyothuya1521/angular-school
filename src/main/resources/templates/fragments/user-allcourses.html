@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<body>
+<section th:fragment="userAllCourses">
+
+    <div class="row" >
+        <div class="col-md-6" th:each="course:${courses}">
+        <div class="card text-center">
+            <img th:src="${course.imageUrl}" alt="" class="card-img-top">
+            <h5 class="card-title" th:text="${course.title}"></h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores autem beatae corporis cum, cupiditate dicta dolorem </p>
+            <a href="#" class="btn btn-primary">Details</a>
+        </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
